@@ -1,0 +1,103 @@
+*{
+	color:white;
+}
+/*Navigation Bar*/
+#nav-bar{
+	width:90%;
+	margin:auto;
+	background-color:#06174a;
+
+}
+
+/*Site Info*/
+#site-name h1{
+	margin:30px;
+	line-height: 50px;
+}
+
+body{
+	background-color:#081041;
+}
+
+/*Main Content*/
+main{
+	width:100%;
+}
+
+.main{
+	display: inline-block;
+	height:100vh;
+	width:68%;
+	margin:1%;
+	background-color:#06174a;
+}
+
+.main-content{
+	display: inline-block;
+	min-height:5vh;
+	width:99%;
+	margin:2px;
+	background-color:#081041;
+}
+
+/*Carousel*/
+#carousel{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: center;
+	height:22vw;
+}
+
+.carousel-poster{
+	display: inline-block;
+	height:14vw;
+	width:14vw;
+	margin:2px;
+	background-color: deepskyblue;
+	border-radius: 10px;
+
+}
+
+/*Latest Releases*/
+
+#latest-release{
+	display: flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	min-height:33vh;
+}
+
+.latest-released-song{
+	height:12vh;
+	width:30vw;
+	margin:10px;
+	background-color: deepskyblue;
+	border-radius: 10px;
+}
+
+/*Popular Artist*/
+#popular-artist{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: center;
+}
+
+.artist{
+	height:8vw;
+	width:8vw;
+	border-radius: 50%;
+	margin: 10px;
+	background-color: deepskyblue;
+}
+
+/*Side Queue*/
+#queue{
+	width:27%;
+	background-color:#06174a;
+}
