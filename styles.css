@@ -10,20 +10,50 @@
 
 }
 
-/*Site Info*/
 #nav-bar img{
 	position:absolute;
 	top:-4px;
-	left:-35px;
+	left:-55px;
 }
+
+#favourites{
+	font-size: 1.3rem;
+	line-height: 40px;
+	margin:auto 20px;
+}
+
+input{
+	position: absolute;
+	height:50%;
+	width:15vw;
+	top:20%;
+	left:73%;
+	border-radius: 5px;
+	font-size: 1.2rem;
+	padding:0px 20px;
+}
+
+#profile img{
+	position: absolute;
+	left:96%;
+	width:5.5%;
+	opacity: 0.8;
+	border-radius: 50%;
+}
+/*Site Info*/
+
 
 #site-name{
 	display: inline-block;
 }
 
 #site-name h1{
-	line-height:20px;
-	margin-left:25px;
+	font-size: 2.5rem;
+	line-height:82px;
+	margin:0px 0px 0px 25px;
+	background: -webkit-linear-gradient(rgb(188, 12, 241), rgb(212, 4, 4));
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
 }
 
 
@@ -39,7 +69,8 @@ main{
 .main{
 	display: inline-block;
 	vertical-align: top;
-	height:100vh;
+	height:92vh;
+	overflow: scroll;
 	width:71%;
 	margin:1%;
 }
@@ -73,6 +104,11 @@ main{
 	margin:20px 0px;
 }
 
+.sub-heading{
+	font-size: 1.5rem;
+	margin-left:35px;
+}
+
 /*Carousel*/
 #carousel{
 	/*display: flex;
@@ -85,7 +121,7 @@ main{
 .carousel-poster{
 	display: inline-block;
 	height:14vw;
-	width:14vw;
+	width:18vw;
 /*	margin:2px;*/
 	background-color: deepskyblue;
 	border-radius: 5px;
@@ -103,11 +139,40 @@ main{
 }
 
 .latest-released-song{
+	display: flex;
+	flex-direction: row;
+	align-content: center;
 	height:10vw;
 	width:30vw;
 /*	margin:10px;*/
 	background-color: deepskyblue;
 	border-radius: 5px;
+}
+
+#latest-released-song-poster{
+	display: inline-block;
+	height:100%;
+	width:180px;
+	background-color: lightblue;
+}
+
+#latest-released-song-info{
+	font-size: 1.6rem;
+	line-height: 30px;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 10px;
+	margin-top:10%;
+}
+
+#latest-released-song-info h4{
+	margin:10px 0px;
+}
+
+#latest-released-song-actions{
+	display: inline-block;
+	font-size: 1.6rem;
+	margin: auto 30px auto auto;
 }
 
 /*Popular Artist*/
@@ -120,13 +185,26 @@ main{
 }
 
 .artist{
-	height:8vw;
-	width:8vw;
+	height:10vw;
+	width:10vw;
+/*	margin: 10px;*/
+/*	background-color: purple;*/
+}
+
+#artist-image{
+	height:9vw;
+	width:9vw;
+	margin: auto;
 	border-radius: 50%;
 /*	margin: 10px;*/
 	background-color: deepskyblue;
 }
 
+#artist-name p{
+	font-size: 1.4rem;
+	margin-top:0px ;
+	text-align: center;
+}
 /*Music Types*/
 #music-types{
 	/*display: flex;
@@ -206,16 +284,36 @@ main{
 
 /*Side Queue*/
 #queue{
-	height:130vh;
+	height:92vh;
 	width:24%;
+	vertical-align: top;
 	background-color:#06174a;
+	overflow: scroll;
+}
+
+.inner-queue{
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+}
+
+.queued-song-body{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+}
+
+.queued-song-body span{
+	font-size: 1.2rem;
+	margin:auto 3px;
 }
 
 .queued-song{
 	display: inline-block;
 	height:5vw;
-	width:90%;
-/*	margin: 5px;*/
+	width:88%;
+	margin: 5px;
 	border-radius: 5px;
 	background-color: deepskyblue;
 }

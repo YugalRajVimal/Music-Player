@@ -10,10 +10,26 @@
 
   <body>
         <nav id="nav-bar">
-          <img src="logo.png" height="65px">
+          <img src="logo.png" height="90px">
           <div id="site-name">
             <h1>GrooveWave</h1>
           </div>
+          <span id="favourites">
+            Favourites
+          </span>
+
+          <span id="input">
+            <input type="text" name="search" placeholder="Search">
+          </span>
+          <span>
+            <i class="fa-light fa-microphone"></i>
+          </span>
+          <span id="notification">
+            
+          </span>
+          <span id="profile">
+            <img src="profile-img.jpeg">
+          </span>
         </nav>
         <main>
           <div id="main-section" class="main">
@@ -34,21 +50,69 @@
               <div id="latest-release" class="main-content ">
 
                   <div class="sub-heading">
-                    <h1>Latest Releases</h1>
+                    <h2>Latest Releases</h2>
                   </div>
 
                   <div class="content">
                       <div class="latest-released-song margin">
-                      
+                        <div id="latest-released-song-poster">
+                          
+                        </div>
+                        <div id="latest-released-song-info">
+                          <h4>Onism</h4>
+                          <span>Aug 11,2017</span>
+                        </div>
+                        <div id="latest-released-song-actions">
+                          <span>...</span>
+                          <br>
+                          <br
+                          <span>4.44</span>
+                        </div>
                       </div>
                       <div class="latest-released-song margin">
-                        
+                        <div id="latest-released-song-poster">
+                          
+                        </div>
+                        <div id="latest-released-song-info">
+                          <h4>Onism</h4>
+                          <span>Aug 11,2017</span>
+                        </div>
+                        <div id="latest-released-song-actions">
+                          <span>...</span>
+                          <br>
+                          <br
+                          <span>4.44</span>
+                        </div>
                       </div>
                       <div class="latest-released-song margin">
-                        
+                        <div id="latest-released-song-poster">
+                          
+                        </div>
+                        <div id="latest-released-song-info">
+                          <h4>Onism</h4>
+                          <span>Aug 11,2017</span>
+                        </div>
+                        <div id="latest-released-song-actions">
+                          <span>...</span>
+                          <br>
+                          <br
+                          <span>4.44</span>
+                        </div>
                       </div>
                       <div class="latest-released-song margin">
-                        
+                        <div id="latest-released-song-poster">
+                          
+                        </div>
+                        <div id="latest-released-song-info">
+                          <h4>Onism</h4>
+                          <span>Aug 11,2017</span>
+                        </div>
+                        <div id="latest-released-song-actions">
+                          <span>...</span>
+                          <br>
+                          <br
+                          <span>4.44</span>
+                        </div>
                       </div>
                   </div>
                   
@@ -57,27 +121,57 @@
               <div id="popular-artist" class="main-content">
 
                   <div class="sub-heading">
-                    <h1>Popular Artists</h1>
+                    <h2>Popular Artists</h2>
                   </div>
 
                   <div class="content">
                       <div class="artist margin">
-                    
+                        <div id="artist-image">
+                          
+                        </div>
+                        <div id="artist-name">
+                          <p>Onism</p>
+                        </div>
                       </div>
                       <div class="artist margin">
-                        
+                        <div id="artist-image">
+                          
+                        </div>
+                        <div id="artist-name">
+                          <p>Onism</p>
+                        </div>
                       </div>
                       <div class="artist margin">
-                        
+                        <div id="artist-image">
+                          
+                        </div>
+                        <div id="artist-name">
+                          <p>Onism</p>
+                        </div>
                       </div>
                       <div class="artist margin">
-                        
+                        <div id="artist-image">
+                          
+                        </div>
+                        <div id="artist-name">
+                          <p>Onism</p>
+                        </div>
                       </div>
                       <div class="artist margin">
-                        
+                        <div id="artist-image">
+                          
+                        </div>
+                        <div id="artist-name">
+                          <p>Onism</p>
+                        </div>
                       </div>
                       <div class="artist margin">
-                        
+                        <div id="artist-image">
+                          
+                        </div>
+                        <div id="artist-name">
+                          <p>Onism</p>
+                        </div>
                       </div>
                   </div>
 
@@ -86,7 +180,7 @@
               <div id="music-types" class="main-content">
 
                 <div class="sub-heading">
-                    <h1>Music Genere</h1>
+                    <h2>Music Genere</h2>
                 </div>
 
                 <div class="content">
@@ -118,7 +212,7 @@
               <div id="top-mixes" class="main-content">
 
                 <div class="sub-heading">
-                    <h1>Top Mixes</h1>
+                    <h2>Top Mixes</h2>
                 </div>
 
                 <div class="content">
@@ -138,7 +232,7 @@
               <div id="latest-english" class="main-content">
 
                 <div class="sub-heading">
-                    <h1>Latest English Songs</h1>
+                    <h2>Latest English Songs</h2>
                 </div>
 
                 <div class="content">
@@ -167,7 +261,7 @@
               <div id="latest-hindi" class="main-content">
 
                 <div class="sub-heading">
-                    <h1>Latest Hindi Songs</h1>
+                    <h2>Latest Hindi Songs</h2>
                 </div>
 
                 <div class="content">
@@ -195,69 +289,224 @@
           </div>
 
           <div id="queue" class="main">
-              <ul type="circle">
-                <li>
+              <div class="sub-heading">
+                <h2>Queue<h2>
+                  <!-- <div id="queue-dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">...</button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div> -->
+              </div>
+              <div class="inner-queue">
+                <div class="queued-song-body">
+                  <span>
+                  01
+                  </span>
                   <div class="queued-song">
-                    
+                      
+                      <span id="like">
+                        
+                      </span>
                   </div>
-                </li>
-                <li>
+                </div>
+                <div class="queued-song-body">
+                  <span>
+                  02
+                  </span>
                   <div class="queued-song">
-                    
+                      
                   </div>
-                </li>
-                <li>
+                </div>
+                <div class="queued-song-body">
+                  <span>
+                  03
+                  </span>
                   <div class="queued-song">
-                    
+                      
                   </div>
-                </li>
-                <li>
+                </div>
+                <div class="queued-song-body">
+                  <span>
+                  04
+                  </span>
                   <div class="queued-song">
-                    
+                      
                   </div>
-                </li>
-                <li>
+                </div>
+                <div class="queued-song-body">
+                  <span>
+                  05
+                  </span>
                   <div class="queued-song">
-                    
+                      
                   </div>
-                </li>
-                <li>
+                </div>
+                <div class="queued-song-body">
+                  <span>
+                  06
+                  </span>
                   <div class="queued-song">
-                    
+                      
                   </div>
-                </li>
-                <li>
+                </div>
+                <div class="queued-song-body">
+                  <span>
+                  07
+                  </span>
                   <div class="queued-song">
-                    
+                      
                   </div>
-                </li>
-                <li>
+                </div>
+                <div class="queued-song-body">
+                  <span>
+                  08
+                  </span>
                   <div class="queued-song">
-                    
+                      
                   </div>
-                </li>
-                <li>
+                </div>
+                <div class="queued-song-body">
+                  <span>
+                  09
+                  </span>
                   <div class="queued-song">
-                    
+                      
                   </div>
-                </li>
-                <li>
+                </div>
+                <div class="queued-song-body">
+                  <span>
+                  10
+                  </span>
                   <div class="queued-song">
-                    
+                      
                   </div>
-                </li>
-                <li>
+                </div>
+                <div class="queued-song-body">
+                  <span>
+                  11
+                  </span>
                   <div class="queued-song">
-                    
+                      
                   </div>
-                </li>
-                <li>
+                </div>
+                <div class="queued-song-body">
+                  <span>
+                  12
+                  </span>
                   <div class="queued-song">
-                    
+                      
                   </div>
-                </li>
+                </div>
+                <div class="queued-song-body">
+                  <span>
+                  13
+                  </span>
+                  <div class="queued-song">
+                      
+                  </div>
+                </div>
+                <div class="queued-song-body">
+                  <span>
+                  14
+                  </span>
+                  <div class="queued-song">
+                      
+                  </div>
+                </div>
+                <div class="queued-song-body">
+                  <span>
+                  15
+                  </span>
+                  <div class="queued-song">
+                      
+                  </div>
+                </div>
+                <div class="queued-song-body">
+                  <span>
+                  16
+                  </span>
+                  <div class="queued-song">
+                      
+                  </div>
+                </div>
+                <div class="queued-song-body">
+                   <span>
+                  17
+                  </span>
+                  <div class="queued-song">
+                      
+                  </div>
+                </div>
+                <div class="queued-song-body">
+                  <span>
+                  18
+                  </span>
+                  <div class="queued-song">
+                      
+                  </div>
+                </div>
+                <div class="queued-song-body">
+                  <span>
+                  19
+                  </span>
+                  <div class="queued-song">
+                      
+                  </div>
+                </div>
+                <div class="queued-song-body">
+                  <span>
+                  20
+                  </span>
+                  <div class="queued-song">
+                      
+                  </div>
+                </div>
+                <div class="queued-song-body">
+                  <span>
+                  21
+                  </span>
+                  <div class="queued-song">
+                      
+                  </div>
+                </div>
+                <div class="queued-song-body">
+                  <span>
+                  22
+                  </span>
+                  <div class="queued-song">
+                      
+                  </div>
+                </div>
+                <div class="queued-song-body">
+                  <span>
+                  23
+                  </span>
+                  <div class="queued-song">
+                      
+                  </div>
+                </div>
+                <div class="queued-song-body">
+                  <span>
+                  24
+                  </span>
+                  <div class="queued-song">
+                      
+                  </div>
+                </div>
+                <div class="queued-song-body">
+                  <span>
+                  25
+                  </span>
+                  <div class="queued-song">
+                      
+                  </div>
+
+              </div>
+                  
                 
-              </ul>
           </div>
         </main>
         
