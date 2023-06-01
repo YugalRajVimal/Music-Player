@@ -121,7 +121,7 @@ main{
 .carousel-poster{
 	display: inline-block;
 	height:14vw;
-	width:18vw;
+	width:20vw;
 /*	margin:2px;*/
 	background-color: deepskyblue;
 	border-radius: 5px;
@@ -142,8 +142,8 @@ main{
 	display: flex;
 	flex-direction: row;
 	align-content: center;
-	height:10vw;
-	width:30vw;
+	height:6vw;
+	width:20vw;
 /*	margin:10px;*/
 	background-color: deepskyblue;
 	border-radius: 5px;
@@ -152,27 +152,28 @@ main{
 #latest-released-song-poster{
 	display: inline-block;
 	height:100%;
-	width:180px;
+	width:7vw;
 	background-color: lightblue;
 }
 
 #latest-released-song-info{
-	font-size: 1.6rem;
-	line-height: 30px;
+	font-size: 1.2rem;
+	line-height: 20px;
 	display: inline-block;
 	vertical-align: top;
 	margin-left: 10px;
-	margin-top:10%;
+	margin-top:5%;
 }
 
 #latest-released-song-info h4{
+	font-size: 1.4rem;
 	margin:10px 0px;
 }
 
 #latest-released-song-actions{
 	display: inline-block;
-	font-size: 1.6rem;
-	margin: auto 30px auto auto;
+	font-size: 1rem;
+	margin: 6% 20px auto auto;
 }
 
 /*Popular Artist*/
@@ -316,4 +317,92 @@ main{
 	margin: 5px;
 	border-radius: 5px;
 	background-color: deepskyblue;
+}
+
+/*Current Song*/
+
+#current-playing-song-body{
+	height: 10vh;
+	width:96vw;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	background-color: royalblue;
+}
+
+#song-info{
+	display: flex;
+	flex-direction: row;
+	height:5vw;
+	width:18vw;
+	background-color: deepskyblue;
+	margin: auto;
+}
+
+#song-poster{
+	height:100%;
+	width:5vw;
+	background-color: lightblue;
+}
+
+#song-name-singer{
+	margin-left:1.5vw;
+	margin-top:0.5vw ;
+	line-height: 7px;
+}
+
+#like-button{
+	margin: auto;
+}
+
+#song-controls{
+	display: flex;
+	flex-direction: column;
+	height:5vw;
+	width:35vw;
+	background-color: deepskyblue;
+	margin: auto;
+}
+
+#time-management{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: center;
+	margin: auto;
+}
+
+#indicator{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	background-color: grey;
+	height: 4px;
+	width:20vw;
+}
+
+#indicates{
+	height: 100%;
+	width:8vw;
+	background-color: lawngreen;
+}
+
+#circle{
+	height:10px;
+	width:10px;
+	margin: -3px 0px;
+	border-radius: 50%;
+	background-color: green;
+}
+
+audio{
+
+}
+
+#other-controls{
+	height:5vw;
+	width:18vw;
+	background-color: deepskyblue;
+	margin: auto;
 }
