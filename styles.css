@@ -3,6 +3,7 @@
 }
 /*Navigation Bar*/
 #nav-bar{
+	position: relative;
 	width:90%;
 	margin:auto;
 	background-color:#06174a;
@@ -10,10 +11,21 @@
 }
 
 /*Site Info*/
-#site-name h1{
-	margin:30px;
-	line-height: 50px;
+#nav-bar img{
+	position:absolute;
+	top:-4px;
+	left:-35px;
 }
+
+#site-name{
+	display: inline-block;
+}
+
+#site-name h1{
+	line-height:20px;
+	margin-left:25px;
+}
+
 
 body{
 	background-color:#081041;
@@ -26,6 +38,7 @@ main{
 
 .main{
 	display: inline-block;
+	vertical-align: top;
 	height:100vh;
 	width:68%;
 	margin:1%;
@@ -34,7 +47,7 @@ main{
 
 .main-content{
 	display: inline-block;
-	min-height:5vh;
+/*	min-height:5vh;*/
 	width:99%;
 	margin:2px;
 	background-color:#081041;
@@ -47,7 +60,6 @@ main{
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-content: center;
-	height:22vw;
 }
 
 .carousel-poster{
@@ -56,7 +68,7 @@ main{
 	width:14vw;
 	margin:2px;
 	background-color: deepskyblue;
-	border-radius: 10px;
+	border-radius: 5px;
 
 }
 
@@ -68,15 +80,14 @@ main{
 	flex-wrap: wrap;
 	justify-content: center;
 	align-content: center;
-	min-height:33vh;
 }
 
 .latest-released-song{
-	height:12vh;
+	height:10vw;
 	width:30vw;
 	margin:10px;
 	background-color: deepskyblue;
-	border-radius: 10px;
+	border-radius: 5px;
 }
 
 /*Popular Artist*/
@@ -96,8 +107,95 @@ main{
 	background-color: deepskyblue;
 }
 
+/*Music Types*/
+#music-types{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: center;
+}
+
+#music-types #stations{
+	height:7vw;
+	width:7vw;
+	margin: 10px;
+	border-radius: 5px;
+	background-color: deepskyblue;
+}
+
+.type{
+	height:7vw;
+	width:7vw;
+	border-radius: 50%;
+	margin: 5px;
+	background-color: deepskyblue;
+}
+
+/*Top Mixes*/
+#top-mixes{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: center;
+}
+
+.mixes{
+	height:10vw;
+	width:20vw;
+	margin: 5px;
+	border-radius: 5px;
+	background-color: deepskyblue;
+}
+
+/*Latest English*/
+#latest-english{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: center;
+}
+
+.latest-english-song{
+	height:8vw;
+	width:8vw;
+	margin: 10px;
+	border-radius: 5px;
+	background-color: deepskyblue;
+}
+
+/*Latest Hindi*/
+#latest-hindi{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: center;
+}
+
+.latest-hindi-song{
+	height:8vw;
+	width:8vw;
+	margin: 10px;
+	border-radius: 5px;
+	background-color: deepskyblue;
+}
+
+
 /*Side Queue*/
 #queue{
+	height:130vh;
 	width:27%;
 	background-color:#06174a;
+}
+
+.queued-song{
+	display: inline-block;
+	height:5vw;
+	width:20vw;
+	margin: 5px;
+	border-radius: 5px;
+	background-color: deepskyblue;
 }
