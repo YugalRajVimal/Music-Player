@@ -28,9 +28,29 @@ input{
 	width:15vw;
 	top:20%;
 	left:73%;
-	border-radius: 5px;
+	border-radius: 30px;
 	font-size: 1.2rem;
 	padding:0px 20px;
+}
+
+#mic{
+	color:black;
+	position: absolute;
+	height:50%;
+	width:15vw;
+	top:35%;
+	left:91%;
+}
+
+#mic i{
+	color:black;
+}
+
+#notification{
+	font-size: 1.5rem;
+	position: absolute;
+	top: 35%;
+	left:93.5%;
 }
 
 #profile img{
@@ -69,7 +89,7 @@ main{
 .main{
 	display: inline-block;
 	vertical-align: top;
-	height:92vh;
+	height:80vh;
 	overflow: scroll;
 	width:71%;
 	margin:1%;
@@ -123,9 +143,14 @@ main{
 	height:14vw;
 	width:20vw;
 /*	margin:2px;*/
-	background-color: deepskyblue;
+/*	background-color: deepskyblue;*/
 	border-radius: 5px;
-
+	background-size: contain;
+}
+.carousel-poster img{
+	height:100%;
+	width:100%;
+	border-radius: 10px;
 }
 
 /*Latest Releases*/
@@ -152,8 +177,10 @@ main{
 #latest-released-song-poster{
 	display: inline-block;
 	height:100%;
-	width:7vw;
-	background-color: lightblue;
+	width:12vh;
+	background-image: url(images/singer-profile/parmish-verma.jpeg);
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
 #latest-released-song-info{
@@ -161,7 +188,7 @@ main{
 	line-height: 20px;
 	display: inline-block;
 	vertical-align: top;
-	margin-left: 10px;
+	margin-left: 5px;
 	margin-top:5%;
 }
 
@@ -201,6 +228,12 @@ main{
 	background-color: deepskyblue;
 }
 
+#artist-image img{
+	height:9vw;
+	width:9vw;
+	border-radius: 50%;
+}
+
 #artist-name p{
 	font-size: 1.4rem;
 	margin-top:0px ;
@@ -231,6 +264,14 @@ main{
 	background-color: deepskyblue;
 }
 
+.type img{
+	height:7vw;
+	width:7vw;
+	filter: blur(8px);
+  -webkit-filter: blur(2px);
+	border-radius: 50%;
+}
+
 /*Top Mixes*/
 #top-mixes{
 	/*display: flex;
@@ -246,6 +287,14 @@ main{
 /*	margin: 5px;*/
 	border-radius: 5px;
 	background-color: deepskyblue;
+}
+
+.mixes img{
+	height:10vw;
+	width:20vw;
+	filter: blur(8px);
+  -webkit-filter: blur(2px);
+	border-radius: 5px;
 }
 
 /*Latest English*/
@@ -265,6 +314,12 @@ main{
 	background-color: deepskyblue;
 }
 
+.latest-english-song img{
+	height:8vw;
+	width:8vw;
+	border-radius: 5px;
+}
+
 /*Latest Hindi*/
 #latest-hindi{
 	/*display: flex;
@@ -282,10 +337,16 @@ main{
 	background-color: deepskyblue;
 }
 
+.latest-hindi-song img{
+	height:8vw;
+	width:8vw;
+	border-radius: 5px;
+}
+
 
 /*Side Queue*/
 #queue{
-	height:92vh;
+	height:80vh;
 	width:24%;
 	vertical-align: top;
 	background-color:#06174a;
@@ -303,6 +364,7 @@ main{
 	flex-direction: row;
 	justify-content: center;
 	align-content: center;
+	position: relative;
 }
 
 .queued-song-body span{
@@ -311,18 +373,54 @@ main{
 }
 
 .queued-song{
-	display: inline-block;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
 	height:5vw;
 	width:88%;
 	margin: 5px;
-	border-radius: 5px;
+	border-radius: 10px;
 	background-color: deepskyblue;
+}
+
+#queued-song-poster{
+	height: 84%;
+	width:20%;
+	margin:auto 0px;
+	border-radius: 10px;
+	background-color: blueviolet;
+}
+
+#queued-song-poster img{
+	height: 100%;
+	width:100%;
+	margin:auto 0px;
+	border-radius: 10px;
+}
+
+#queued-song-info{
+	font-size: 1.2rem;
+	line-height: 8px;
+	margin-left: 15px;
+	width:65%;
+}
+
+#queued-song-info h4{
+	margin:12% auto 7% auto;
+}
+
+#like{
+	font-size: 2rem;
+	position: absolute;
+	top:34%;
+	left:85%;
 }
 
 /*Current Song*/
 
 #current-playing-song-body{
-	height: 10vh;
+	height: 8vh;
 	width:96vw;
 	margin: auto;
 	display: flex;
@@ -333,8 +431,9 @@ main{
 #song-info{
 	display: flex;
 	flex-direction: row;
-	height:5vw;
+	height:80%;
 	width:18vw;
+	border-radius: 10px;
 	background-color: deepskyblue;
 	margin: auto;
 }
@@ -342,12 +441,18 @@ main{
 #song-poster{
 	height:100%;
 	width:5vw;
-	background-color: lightblue;
 }
 
+#song-poster img{
+	height:100%;
+	border-radius: 10px;
+	width:6.7vh;
+}
+
+
 #song-name-singer{
-	margin-left:1.5vw;
-	margin-top:0.5vw ;
+	margin-left:10px;
+	margin-top:0vw ;
 	line-height: 7px;
 }
 
@@ -358,7 +463,7 @@ main{
 #song-controls{
 	display: flex;
 	flex-direction: column;
-	height:5vw;
+	height:80%;
 	width:35vw;
 	background-color: deepskyblue;
 	margin: auto;
@@ -401,7 +506,7 @@ audio{
 }
 
 #other-controls{
-	height:5vw;
+	height:80%;
 	width:18vw;
 	background-color: deepskyblue;
 	margin: auto;
