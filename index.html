@@ -10,31 +10,36 @@
   </head>
 
   <body>
-        <nav id="nav-bar">
-          <img src="logo.png" height="90px">
-          <div id="site-name">
-            <h1>GrooveWave</h1>
-          </div>
-          <span id="favourites">
-            Favourites
-          </span>
 
-          <span id="input">
-            <input type="text" name="search" placeholder="Search">
-          </span>
-          <span id="mic">
-            <i class="fa-solid fa-microphone"></i>
-          </span>
-          <span id="notification">
-            <i class="fa-regular fa-bell"></i>
-          </span>
-          <span id="profile">
-            <img src="profile-img.jpeg">
-          </span>
+        <nav>
+          <div id="nav-bar">
+            <img src="images/Logo/logo.png" height="90px">
+            <div id="site-name">
+              <h1>GrooveWave</h1>
+            </div>
+            <span id="favourites">
+              Favourites
+            </span>
+
+            <span id="input">
+              <input type="text" name="search" placeholder="Search">
+            </span>
+            <span id="mic">
+              <i class="fa-solid fa-microphone"></i>
+            </span>
+            <span id="notification">
+              <i class="fa-regular fa-bell"></i>
+            </span>
+            <span id="profile">
+              <img src="images/Profile/profile-img.jpeg">
+            </span>
+          </div>
         </nav>
         <main>
           <div id="main-section" class="main">
-
+              <div id="extra">
+                
+              </div>
               <div id="carousel" class="main-content">
 
                 <div class="content">
@@ -218,26 +223,32 @@
                 </div>
 
                 <div class="content">
-                    <div id="stations" class=" margin">
+                    <!-- <div id="stations" class=" margin">
                   
-                    </div>
+                    </div> -->
                     <div class="type margin">
                       <img src="images/types/love.jpg">
+                      <span>&nbsp&nbspLOVE&nbsp&nbsp</span>
                     </div>
                     <div class="type margin">
                       <img src="images/types/retro.jpg">
+                      <span>&nbsp&nbspRETRO&nbsp</span>
                     </div>
                     <div class="type margin">
                       <img src="images/types/chill.jpg">
+                      <span>&nbsp&nbspCHILL&nbsp</span>
                     </div>
                     <div class="type margin">
                       <img src="images/types/workout.jpg">
+                      <span>WORKOUT</span>
                     </div>
                     <div class="type margin">
                       <img src="images/types/rock.jpg">
+                      <span>&nbsp&nbsp&nbspROCK&nbsp</span>
                     </div>
                     <div class="type margin">
                       <img src="images/types/pop.jpg">
+                      <span>&nbsp&nbsp&nbspPOP&nbsp&nbsp</span>
                     </div>
                 </div>
                 
@@ -252,12 +263,15 @@
                 <div class="content">
                   <div class="mixes margin">
                     <img src="images/types/party.jpg">
+                    <span>&nbsp&nbsp&nbspPARTY&nbsp&nbsp</span>
                   </div>
                   <div class="mixes margin">
                     <img src="images/types/electronic.jpg">
+                    <span>ELECTRONIC</span>
                   </div>
                   <div class="mixes margin">
                     <img src="images/types/road-trip.jpg">
+                    <span>ROAD TRIP</span>
                   </div>
                 </div>
 
@@ -323,16 +337,11 @@
           </div>
 
           <div id="queue" class="main">
+            <div id="extra">
+                
+            </div>
               <div class="sub-heading">
                 <h2>Queue<h2>
-                  <!-- <div id="queue-dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">...</button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                  </div> -->
               </div>
 
               <div class="inner-queue">
@@ -796,32 +805,67 @@
                     <img src="images/singer-profile/parmish-verma.jpeg">
                 </div>
                 <div id="song-name-singer">
-                  <h4>Onism</h4>
-                  <span>Aug 11,2017</span>
+                  <h4>Meri Marzi</h4>
+                  <span>Parmish Verma</span>
                 </div>
                 <div id="like-button">
-                  ..
+                  <i class="fa-regular fa-heart"></i>
                 </div>
 
             </div>
 
             <div id="song-controls">
-              <div>
-                
+              <div id="controls">
+                <div id="shuffle">
+                  <i class="fa-solid fa-shuffle"></i>
+                </div>
+                <div id="previous">
+                  <i class="fa-solid fa-backward-step"></i>
+                </div>
+                <div id="play-pause">
+                  <i class="fa-solid fa-pause"></i>
+                </div>
+                <div id="next">
+                  <i class="fa-solid fa-forward-step"></i>
+                </div>
+                <div id="repeat">
+                  <i class="fa-solid fa-repeat"></i>
+                </div>
               </div>
               <div id="time-management">
-                <div>1:39</div>
+                <div class="time">1:39</div>
                 <div id="indicator">
                   <div id="indicates">
                   </div>
                   <div id="circle">
                   </div>
                 </div>
-                <div>4:44</div>
+                <div class="time">4:44</div>
               </div>
             </div>
             <div id="other-controls">
-              
+              <div id="playlist">
+                <i class="fa-solid fa-list"></i>
+              </div>
+              <div id=external-sound-devices>
+                <i class="fa-solid fa-computer"></i>
+              </div>
+              <div id="speaker">
+                <i class="fa-solid fa-volume-high"></i>
+              </div>
+              <div id="volume-control">
+                <div id="outer-vol">
+                  <div id="current-vol">
+                    
+                  </div>
+                  <div id="vol-indicator">
+                    
+                  </div>
+                </div>
+              </div>
+              <div id="zoom">
+                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+              </div>
             </div>
           </div>
 
